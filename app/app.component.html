@@ -8,6 +8,14 @@
 <a href="#parent-to-view-child">Parent calls <i>ViewChild</i>("Countdown  to Liftoff")</a><br/>
 <a href="#bidirectional-service">Parent and children communicate via a service ("Mission Control")</a><br/>
 
+<hr>
+
+<div class="app">
+  Value (Parent Component): {{myValue}}
+  <counter [counterValue]="myValue" (counterChange)="myValueChange($event);">counter</counter>
+</div>
+<hr>
+
 <div id="parent-to-child">
   <hero-parent></hero-parent>
 </div>
